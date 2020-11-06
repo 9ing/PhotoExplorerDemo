@@ -2,6 +2,7 @@
   <div id="app">
     <PhotoExplorer :title="photoExplorerTitle" :photoList="photoList"
     :index="photoExplorerIndex" :visible.sync="photoExplorerVisible"></PhotoExplorer>
+    <!-- 利用.sync修飾語法來雙向綁定內外元件的visible值，這樣就不用像2.3之前，再寫一個method來改變值。 -->
     <div class="container">
       <div class="photoListBox">
         <ul class="row">
